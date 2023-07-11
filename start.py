@@ -21,12 +21,12 @@ with sr.Microphone() as source:
         # using google speech recognition
         print("I Heard: "+spch)
     except:
-         print("Sorry, I did not get that")
+         print("Sorry, I didn't check that")
          
          
 print("Now Loading Model...")
 
-alpaca = Alpaca('./alpaca', 'model.bin')
+alpaca = Alpaca('./alpaca', 'ggml-alpaca-7b-q4.bin')
 try:
     output = alpaca.run_simple(InferenceRequest(input_text=spch))["output"]
 finally:

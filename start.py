@@ -21,7 +21,7 @@ with sr.Microphone() as source:
         # using google speech recognition
         print("I Heard: "+spch)
     except:
-         print("Sorry, I didn't check that")
+         print("Sorry, I didn't catch that")
          
          
 print("Now Loading Model...")
